@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/SzJu/Create_Steamy/issues"
+license = "GNU AGPL 3.0"
+
+[[mods]]
+modId = "create_steamy"
+version = "1.0-SNAPSHOT"
+displayName = "Create: Steamy"
+displayURL = ""
+updateJSONURL = ""
+authors = "steamy"
+description = '''A Create mod addon that adds steam-related content'''
+
+[[mixins]]
+config = "create_steamy.mixins.json"
+
+[[dependencies."create_steamy"]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.219,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."create_steamy"]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
